@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "setup": "npm i && dfx canister create backend && dfx generate backend && dfx deploy",
-    "start": "run-p frontend backend",
-    "frontend": "vite --port 3000",
-    "backend": "dfx deploy backend",
+    "start": "vite --port 3000",
     "build": "tsc && vite build",
     "test": "run-s  test:frontend",
     "pretest:backend": "AZLE_REBUILD=true ts-node -P tsconfig.node.json --transpile-only --ignore=false backend/tests/pretest.ts",
