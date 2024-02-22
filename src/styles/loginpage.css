@@ -1,0 +1,96 @@
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after {
+  content: 'Now';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 40px;
+  transition: 0.7s;
+}
+
+.button:hover span {
+  padding-right: 3.55em;
+}
+
+.button:hover span:after {
+  opacity: 4;
+  right: 0;
+}
+
+.coolinput label.text {
+font-size: 0.75rem;
+color: rgb(29 78 216 / var(--tw-bg-opacity));
+font-weight: 700;
+position: relative;
+top: 0.6rem;
+margin: 0 0 0 7px;
+padding: 0 3px;
+background: rgb(243 244 246 / var(--tw-bg-opacity));
+width: fit-content;
+}
+
+.coolinput input[type=text].input {
+padding: 11px 10px;
+font-size: 0.75rem;
+border: 2px rgb(29 78 216 / var(--tw-bg-opacity)) solid;
+border-radius: 5px;
+background: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.coolinput input[type=text].input:focus {
+outline: none;
+}
+
+.coolinput .react-datepicker-wrapper {
+padding: 11px 10px;
+font-size: 0.75rem;
+border: 2px rgb(29 78 216 / var(--tw-bg-opacity)) solid;
+border-radius: 5px;
+background: rgb(243 244 246 / var(--tw-bg-opacity));
+width: 100%;
+outline: none;
+}
+
+.coolinput .react-datepicker-wrapper .react-datepicker__input-container input {
+padding: 0px 0px;
+font-size: 0.75rem;
+border: 2px rgb(243 244 246 / var(--tw-bg-opacity)) solid; 
+border-radius: 5px;
+background: rgb(243 244 246 / var(--tw-bg-opacity));
+width: 100%;
+outline: none;
+}
+
+.form-container {
+transition: transform 0.5s ease;
+}
+
+.signin-page .form-container {
+transform: rotateY(180deg);
+}
+
+.signup-page .form-container {
+transform: rotateY(0deg);
+}
+
+.form-content {
+transition: opacity 0.5s ease;
+}
+
+.signin-page .form-content {
+opacity: 0;
+}
+
+.signup-page .form-content {
+opacity: 1;
+}
+
+
+
+
