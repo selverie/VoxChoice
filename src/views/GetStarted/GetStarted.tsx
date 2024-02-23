@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/tailwind.css';
 import '../../styles/getstarted.css';
 import 'react-datepicker/dist/react-datepicker.css';
+import { ICandidate } from '../../interfaces/candidate.interfaces';
+import { backend } from '../../../backend/declarations';
 
 const GetStarted: React.FC = () => {
+    const [candidate, setCandidate] = useState<ICandidate[]>([]);
+    const [loading, setLoading] = useState(false);
+    // Get the current counter value
+    const getAllCandidates = async () => {
+        try {
+            setLoading(true);
+            const response = await backend.getAllCandidate();
+            console.log(response);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    // Fetch the count on page load
+    useEffect(() => {
+        getAllCandidates();
+    }, []);
+
     return (
         <div className="relative">
             <div className="min-h-screen py-16 flex items-center justify-center" style={{ backgroundImage: 'url("../../assets/images/Login-Background.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
