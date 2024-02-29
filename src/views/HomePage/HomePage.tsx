@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import '../../styles/tailwind.css';
+import '../../App.css';
 import '../../styles/homepage.css';
 import 'react-datepicker/dist/react-datepicker.css';
 
