@@ -15,7 +15,7 @@ export interface _SERVICE {
           'email' : string,
           'updatedAt' : bigint,
           'address' : string,
-          'birth' : bigint,
+          'birth' : string,
           'phone' : string,
           'isRegistered' : boolean,
         }
@@ -60,7 +60,7 @@ export interface _SERVICE {
           'email' : string,
           'updatedAt' : bigint,
           'address' : string,
-          'birth' : bigint,
+          'birth' : string,
           'phone' : string,
           'isRegistered' : boolean,
         }
@@ -73,7 +73,7 @@ export interface _SERVICE {
         'name' : string,
         'email' : string,
         'address' : string,
-        'birth' : bigint,
+        'birth' : string,
         'phone' : string,
       },
     ],
@@ -87,7 +87,7 @@ export interface _SERVICE {
           'email' : string,
           'updatedAt' : bigint,
           'address' : string,
-          'birth' : bigint,
+          'birth' : string,
           'phone' : string,
           'isRegistered' : boolean,
         }

@@ -22,7 +22,7 @@ export const User = Record({
   name: text,
   email: text,
   address: text,
-  birth: nat64,
+  birth: text,
   phone: text,
   role: text,
   isRegistered: bool,
@@ -35,7 +35,7 @@ export const UserPayload = Record({
   name: text,
   email: text,
   address: text,
-  birth: nat64,
+  birth: text,
   phone: text,
 })
 

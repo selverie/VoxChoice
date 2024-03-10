@@ -5,24 +5,6 @@
   transition: 0.4s;
 }
 
-.button span:after {
-  content: 'Now';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 40px;
-  transition: 0.7s;
-}
-
-.button:hover span {
-  padding-right: 3.55em;
-}
-
-.button:hover span:after {
-  opacity: 4;
-  right: 0;
-}
-
 .coolinput label.text {
 font-size: 0.75rem;
 color: rgb(29 78 216 / var(--tw-bg-opacity));

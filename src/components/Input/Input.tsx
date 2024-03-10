@@ -5,9 +5,10 @@ interface InputProps {
   placeholder: string;
   name: string;
   type?: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input: React.FC<InputProps> = ({ label, placeholder, name, type = 'text' }) => {
+const Input: React.FC<InputProps> = ({ label, placeholder, name, type = 'text', onChange }) => {
   const inputClassName = 'input border py-1 px-2 w-full rounded-md';
   const inputStyle =
     type === 'password' || type === 'date' 
@@ -30,6 +31,7 @@ const Input: React.FC<InputProps> = ({ label, placeholder, name, type = 'text' }
         name={name}
         className={`${inputClassName} ${type === 'date' ? 'border-blue-700' : ''}`}
         style={inputStyle}
+        onChange={onChange}
       />
     </div>
   );
